@@ -1,5 +1,6 @@
 package com.endrew.cadastro_usuario.service;
 
+import com.endrew.cadastro_usuario.dto.UsuarioDTO;
 import com.endrew.cadastro_usuario.infrastructure.entity.Usuario;
 import com.endrew.cadastro_usuario.infrastructure.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;

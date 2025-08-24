@@ -1,5 +1,6 @@
 package com.endrew.cadastro_usuario.infrastructure.entity;
 
+import com.endrew.cadastro_usuario.dto.UsuarioDTO;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -22,4 +23,9 @@ public class Usuario {
 
     @Column(name = "CPF", unique = true)
     private String cpf;
+
+    public Usuario(UsuarioDTO usuario) {
+        this.nome = usuario.nome();
+        this.cpf = usuario.cpf();
+    }
 }
